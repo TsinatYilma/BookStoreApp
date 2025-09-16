@@ -1,17 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 
 
 export default function HomeScreen() {
   return (
-    <View className='flex justify-center items-center'>
-      <Text  className=' text-white text-2xl'>hey there</Text>
+    <View className='min-h-screen flex justify-center items-center'>
+      <Text  className=' text-red-600 text-7xl'>hey there</Text>
     </View>
   );
 }
-const styles = StyleSheet.create({
-  texting: {
-    color: 'red',
-    fontSize: 24,
-    textAlign: 'center',
-  },
-});
