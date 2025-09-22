@@ -11,10 +11,10 @@ export default function Menu({
   const router = useRouter();
 
   return (
-    <View>
+    <View className='relative top-3 left-0 ehoin'>
       {/* Slide-in Menu */}
       <View
-        className={`flex-col md:hidden absolute z-30 top-0 left-0 bg-black/80 min-h-screen w-[90%] transition-all duration-700 ease-out ${
+        className={`flex-col md:hidden absolute z-30 -top-20 left-0 bg-black/80 min-h-screen w-[90%] transition-all duration-700 ease-out ${
           menuVisible ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
