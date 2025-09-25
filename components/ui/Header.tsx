@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <View className='relative'>
-      <View className="flex-row p-4 w-full h-[60px] justify-between items-center bg-black border ">
+      <View className="border-white flex-row p-4 w-full h-[60px] justify-between items-center bg-black border ">
         {/* Mobile Menu Toggle */}
         <View className="md:hidden flex-row justify-between w-full">
             <TouchableOpacity onPress={() => router.push('/')}>
