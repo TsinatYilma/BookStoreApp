@@ -1,12 +1,13 @@
 import Header from '@/components/ui/Header';
+import { useFonts } from 'expo-font';
+import { Slot } from 'expo-router';
 import { Image, ScrollView, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Slot, Stack } from 'expo-router';
-import { useFonts } from 'expo-font';
 
 const [fontsLoaded] = useFonts({
-  Gabarito: require('../assets/fonts/gabarito/Gabarito-Regular.ttf'),
-  Handlee: require('../assets/fonts/handlle/Handlee-Regular.ttf'),
+  Gabarito: require('../assets/font/gabarito/Gabarito-Regular.ttf'),
+  Gantari: require('../assets/font/gantari/Gantari-Regular.ttf'),
+  Handlee: require('../assets/font/handlee/Handlee-Regular.ttf'),
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

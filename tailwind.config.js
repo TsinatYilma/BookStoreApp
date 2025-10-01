@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         gabarito: ["Gabarito"],
+        gantari: ["Gantari"],
         handlee: ["Handlee"],
     },
   },
