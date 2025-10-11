@@ -1,6 +1,8 @@
+
 import BookJunk from '@/components/ui/bookLibrary';
 import { Link, useRouter } from 'expo-router';
 import { Text, View } from 'react-native';
+import './global.css';
 
 
 

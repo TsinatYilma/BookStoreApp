@@ -4,6 +4,7 @@ import { Slot } from 'expo-router';
 import { Image, ScrollView, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+
 const [fontsLoaded] = useFonts({
   Gabarito: require('../assets/font/gabarito/Gabarito-Regular.ttf'),
   Gantari: require('../assets/font/gantari/Gantari-Regular.ttf'),

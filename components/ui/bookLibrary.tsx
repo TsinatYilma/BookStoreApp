@@ -1,21 +1,24 @@
-import '@/app/globals.css';
-import { Text, View } from 'react-native';
+
+import { Image, ScrollView, Text, View } from 'react-native';
 import { books } from './PlaceHoldeBooks';
 
 export default function BookJunk() {
   return (
-    <View className={"font-gabarito flex flex-col justify-center w-full mb-8"}>
+    <ScrollView className={"font-gabarito flex flex-col w-full mb-8 gap-10"}>
        {books.map((book, index) => (
-        <View className="flex gap-10" key={index}>
+        <View className="flex flex-row gap-5 mb-10" key={index}>
            <View>
-             <img src={book.cover} alt="" width={30} height={40} />
+           <Image
+            source={{ uri: book.cover }}
+            className="w-[60px] h-[80px] rounded"
+          />
            </View>
            <View>
-             <Text>{book.name}</Text>
-             <Text>{"by "+ book.author}</Text>
+             <Text className='text-2xl text-white'>{book.name}</Text>
+             <Text className='text-white'>{"by "+ book.author}</Text>
            </View>
         </View>
        ))}
-    </View>
+    </ScrollView>
   );
 }
